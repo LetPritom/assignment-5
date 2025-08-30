@@ -1,32 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <nav class="flex justify-between">
-           <div class="nav-logo-content flex mx-6">
-             <div class="logo my-8 mx-4">
-                <img class="w-15 h-15" src="assets/logo.png" alt="">
+      <nav class="flex justify-between h-[120px]">
+        <div class="nav-logo-content flex mx-6">
+          <div class="logo my-8 mx-4">
+            <img class="w-15 h-15" src="assets/logo.png" alt="" />
+          </div>
+          <div class="para my-8">
+            <p class="font-bold text-[#006747]">Emargency</p>
+            <p class="font-bold text-[#006747]">Service</p>
+          </div>
+        </div>
+
+        <div class="action-container w-[44%] lg:w-[30%] flex justify-evenly items-center">
+          <div class=" bg-[#f7d0ef] w-12 set-icon flex items-center justify-center rounded-2xl gap-1">
+            <p>0</p>
+          <span
+            ><img class="w-5 h-5" src="assets/heart.png" alt="wishlist"
+          /></span>
+          </div>
+          <div class="set-icon2 bg-[#f7d0ef] rounded-2xl w-12 flex items-center justify-center gap-1">
+            <p>100</p>
+          <span
+            ><img class="w-5 h-5" src="assets/coin.png" alt="wishlist"
+          /></span>
+          </div>
+          <button class="px-4 py-2 bg-[#00A63E] text-white rounded-2xl">
+            2 Copy
+          </button>
+        </div>
+      </nav>
+      <section class="hero-section">
+        <div class="main-hero">
+          <div
+            class="h-[33vh] logo bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] items-center text-center justify-center flex flex-col "
+          >
+            <div class="img my-2">
+              <img class="w-15 h-15" src="assets/logo-dark.png" alt="" />
             </div>
-            <div class="para my-8">
-                <p class="font-bold text-[#006747]">Emargency</p>
-                <p class="font-bold text-[#006747]">Service</p>
-            </div>
-           </div>
-           
-           <div class="action-container w-[40%] flex justify-evenly items-center">
-             <p>0</p>
-             <span><img class="w-7 h-7" src="assets/heart.png" alt="wishlist"></span>
-             <p>100</p>
-             <span><img class="w-7 h-7" src="assets/coin.png" alt="wishlist"></span>
-             <button class="px-4 py-2 bg-[#00A63E] text-white rounded-2xl">2 Copy</button>
-           </div>
-        </nav>
+            <h1 class="text-white font-bold font text-xl">
+              Emergency Service Directory
+            </h1>
+            <p class="text-white">
+              Government Emergency Services at Your Fingertip – A Project by
+              Government of the People’s Republic of Bangladesh
+            </p>
+          </div>
+        </div>
+      </section>
     </header>
-</body>
+    <main>
+      <section class="all flex gap-4 flex-col  lg:flex-row
+      ">
+        <section class="cart-section flex justify-center flex-wrap gap-12">
+          <div
+            class="icon w-[280px] h-[280px] shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="icon w-70 h-70 shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="icon w-70 h-70 shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="icon w-70 h-70 shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="icon w-70 h-70 shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="icon w-70 h-70 shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="icon w-70 h-70 shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="icon w-70 h-70 shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+          <div
+            class="icon w-70 h-70 shadow-[0_4px_6px_rgba(0,0,0,0.3)] rounded-xl flex flex-col justify-center items-center gap-3 mt-8"
+          >
+            <div class="icon-align w-60 flex justify-between">
+              <div
+                class="national-em h-10 w-10 bg-[#f7d0ef] flex justify-center items-center rounded-lg"
+              >
+                <img
+                  class="emargency-img w-7 h-7"
+                  src="assets/emergency.png"
+                  alt=""
+                />
+              </div>
+              <div class="wishlist">
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+            </div>
+            <div class="text w-60 mt leading-relaxed">
+              <h2 class="font-bold">National Emergency Number</h2>
+              <p class="text-[#5C5C5C]">National Emergency</p>
+              <h1 class="number font-bold text-xl">999</h1>
+              <p class="text-[#5C5C5C]">All</p>
+            </div>
+            <div class="btn flex gap-2 mt-5">
+              <button
+                class="border flex items-center gap-2 px-6 py-1 bg-white text-[#5C5C5C] rounded-xl"
+              >
+                <i class="fa-solid fa-copy"></i>
+                Copy
+              </button>
+              <!-- Call Button -->
+              <button
+                class="flex items-center gap-2 px-8 py-1 bg-green-600 text-white rounded-xl"
+              >
+                <i class="fa-solid fa-phone"></i>
+                Call
+              </button>
+            </div>
+          </div>
+        </section>
+        <section class="call history pl-10 mt-8 mr-2 h-auto flex flex-col items-center w-full lg:w-[30%] mt-8">
+          <div class="history-title flex justify-between w-80">
+            <div class="icnon-text flex gap-2 items-center">
+              <span><i class="text-[#5C5C5C] fa-regular fa-clock"></i></span>
+              <h2 class="font-bold">Call History</h2>
+            </div>
+            <button
+              class="flex items-center gap-2 px-5 py-1.5 bg-green-600 text-white rounded-2xl mr-10"
+            >
+              Clear
+            </button>
+          </div>
+          <div class="add-history w-80 flex flex-col">hsdfughfigu</div>
+        </section>
+      </section>
+    </main>
+  </body>
 </html>
