@@ -1,13 +1,15 @@
 // first logic
 
 const hearts = document.querySelectorAll(`.love`);
-const para = document.getElementsByClassName(`nav-para`);
+const para = document.querySelector(`.nav-para`);
 // const coin = document.getElementsByClassName(`taka`);
 const increase = document.getElementById(`gain`);
 let count = 0;
+let copyCount = 0 ;
 const coin = document.querySelector(`.taka`);
 let decrease = coin.innerText;
 const callButton = document.querySelectorAll(`.btn button:last-child`);
+const copyButton = document.querySelectorAll(`.btn button:first-child`);
 const addHistoryContainer = document.querySelector(`.add-history`);
 const resetBtn = document.querySelector(`.history-title button`);
 
@@ -20,7 +22,7 @@ for (const heart of hearts) {
   });
 }
 
-// second logic call button function
+// second logic which is call button function
 
 for (const btn of callButton) {
   btn.addEventListener(`click`, function () {
@@ -64,4 +66,21 @@ for (const btn of callButton) {
 
 resetBtn.addEventListener (`click`, function () {
     addHistoryContainer.innerText = ``;
-})
+});
+
+
+// 3rd logic which is copy functional 
+
+for (const copy of copyButton) {
+        copy.addEventListener(`click`, function () {
+            const cart2 =copy.closest(`.icon`);
+            const service2 = cart2.querySelector(`h2`).innerText;
+            const emergencyNum2 = cart2.querySelector(`.number`).innerText;
+            navigator.clipboard.writeText(emergencyNum2);
+            alert(`${service2} number is copied ${emergencyNum2}`);
+            copyCount++ ;
+            para.innerText = copyCount +` `+ `copy`;
+
+        })
+}
+
